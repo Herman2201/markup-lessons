@@ -1,0 +1,28 @@
+/* body {
+    height: 100%;
+    width: 100%;
+
+} */
+.figures {
+  height: 200px;
+  width: 200px;
+  margin: 100px;
+}
+.detail1 {
+  height: 0px;
+  width: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #cd6d45;
+  position: relative;
+}
+.detail1::after {
+  content: "";
+  height: 0px;
+  width: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #cd6d45;
+  position: absolute;
+  rotate: 180%;
+}

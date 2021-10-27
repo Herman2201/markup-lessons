@@ -1,0 +1,94 @@
+h1 {
+  padding-top: 2vw;
+  font-family: Trebuchet MS, sans-serif;
+}
+hr {
+  height: 0.3vh;
+  background-color: rgb(85, 83, 83);
+  border: none;
+}
+
+a {
+  color: green;
+}
+
+/*thead{
+    background-color: dark-gray;
+    background-color: #B4B4B4;
+}
+td{
+    border: 0.2vw solid #787878;
+    height: 8.4vh;
+    width: 35vw;
+}
+table{
+    border-collapse: collapse;
+    background-color: #f0f0f0;
+}*/
+
+body {
+  color: white;
+}
+form {
+  background-color: rgb(51, 49, 49);
+  width: 50vw;
+  height: 60vh;
+  margin: auto;
+  border-radius: 2vw;
+}
+.check {
+  width: 1vw;
+  height: 2vh;
+}
+button {
+  border: none;
+
+  width: 20vw;
+  height: 6vh;
+  background-color: rgb(74, 121, 48);
+  float: right;
+  padding: auto 1vw;
+  margin: 1vw 2vw;
+  border-radius: 2vw;
+}
+
+.btn {
+  font-size: 25px;
+  font-family: Bookman, URW Bookman L, serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  border: 0.2vw solid grey;
+
+  color: grey;
+  background-color: white;
+  padding: 0.2vw 0.2vw 0.2vw 3vw;
+  width: 40vw;
+  height: 4vh;
+  border-radius: 2vw;
+  margin: 1vw 2vw;
+  outline: 0;
+}
+.name {
+  background: url(img/user.png) no-repeat 0.3vw 0.5vh;
+  background-size: auto 70%;
+  background-color: white;
+}
+.tel {
+  background: url(img/tel.png) no-repeat 0.3vw 0.5vh;
+  background-size: auto 70%;
+  background-color: white;
+}
+.mail {
+  background: url(img/mail.png) no-repeat 0.3vw 0.5vh;
+  background-size: auto 70%;
+  background-color: white;
+}
+.lock {
+  background: url(img/lock.png) no-repeat 0.3vw 0.5vh;
+  background-size: auto 70%;
+  background-color: white;
+}
