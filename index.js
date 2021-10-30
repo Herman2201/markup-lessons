@@ -32,3 +32,4 @@ const get = (obj, item) => {
     // const test7 = get(data, ['hosts', 1, 'active']); // false
     
     console.log(test2);
+  

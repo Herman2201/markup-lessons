@@ -1,0 +1,13 @@
+thead {
+  background-color: dark-gray;
+  background-color: #b4b4b4;
+}
+td {
+  border: 0.2vw solid #787878;
+  height: 8.4vh;
+  width: 35vw;
+}
+table {
+  border-collapse: collapse;
+  background-color: #f0f0f0;
+}

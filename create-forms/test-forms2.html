@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-form2.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <title>Test create form 2</title>
+  </head>
+  <body>
+    <form action="#">
+      <h1>Форма</h1>
+      <hr />
+      <div class="form__register">
+        <label for="user">Введите свое имя</label>
+        <input type="username" id="user" name="user" placeholder="Login" />
+        <label for="pass">Придумайте пароль</label>
+        <input type="password" id="pass" name="pass" placeholder="password" />
+      </div>
+      <div class="site__rating">
+        <label for="otlichno" class="label1">Оцените наш сайт</label>
+        <div>
+          <input
+            type="radio"
+            name="contact"
+            checked="true"
+            id="otlichno"
+            value="otlichno"
+          />
+          <label for="otlichno">Отлично</label>
+        </div>
+        <div>
+          <input type="radio" name="contact" id="horosho" value="horosho" />
+          <label for="horosho">Хорошо</label>
+        </div>
+        <div>
+          <input type="radio" name="contact" id="ne_ochen" value="ne_ochen" />
+          <label for="ne_ochen"> Не очень</label>
+        </div>
+        <div>
+          <input type="radio" name="contact" id="ploho" value="ploho" />
+          <label for="ploho"> Плохо</label>
+        </div>
+      </div>
+      <div class="hobby__time">
+        <label class="label2">Как вы проводите свободное время?</label>
+        <div>
+          <input type="checkbox" name="games" id="games" value="games" />
+          <label for="games">Играю в игры</label>
+        </div>
+        <div>
+          <input type="checkbox" name="musik" id="musik" value="music" />
+          <label for="musik">Слушаю музыку</label>
+        </div>
+        <div>
+          <input type="checkbox" name="sport" id="sport" value="sport" />
+          <label for="sport">Занимаюсь спортом</label>
+        </div>
+        <div>
+          <input type="checkbox" name="lazzy" id="lazzy" value="lazzy" />
+          <label for="lazzy">Ленюсь</label>
+        </div>
+      </div>
+      <div class="mice__cream__choice">
+        <label for="ice__cream__choice">
+          С чем вы предпочитаете есть мороженно?
+        </label>
+        <input
+          list="ice__cream__flavors"
+          id="ice__cream__choice"
+          name="ice__cream__choice"
+        />
+        <datalist id="ice__cream__flavors">
+          <option value="Шоколад"></option>
+          <option value="Кокос"></option>
+          <option value="Ментол"></option>
+          <option value="Клюбнику"></option>
+          <option value="Ваниль"></option>
+        </datalist>
+      </div>
+      <div class="test__counter">
+        <label for="">Количестко</label>
+        <input type="button" class="minus" value="-" />
+        <input type="text" class="counter" value="0" disabled />
+        <input type="button" class="plus" value="-" />
+      </div>
+      <div class="test__counter1">
+        <label for="">Количеcтсво</label>
+        <input type="range" min="0" max="50" id="size" value="0" />
+      </div>
+      <div class="text__search">
+        <label for="search">Поиск</label>
+        <input type="search" id="search" placeholder="Поиск" />
+      </div>
+      <div class="on__off">
+        <label>Включить</label>
+        <input id="off__on" name="off__on" type="checkbox" />
+        <label class="off__on" for="off__on"></label>
+      </div>
+      <div class="comment__user">
+        <label for="">Ваши интересы</label>
+        <textarea
+          name="textarea"
+          id="commen"
+          placeholder="Введите текст сюда..."
+        ></textarea>
+      </div>
+      <button>Отправить</button>
+    </form>
+
+    <script>
+      $(".minus").click(function () {
+        var $price = $(".counter");
+        $price.val(parseInt($price.val()) - 1);
+        $price.change();
+      });
+      $(".plus").click(function () {
+        var $price = $(".counter");
+        $price.val(parseInt($price.val()) + 1);
+        $price.change();
+      });
+    </script>
+  </body>
+</html>

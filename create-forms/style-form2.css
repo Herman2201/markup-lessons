@@ -1,0 +1,258 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: rgba(174, 171, 171, 0.433);
+}
+
+input[type="button"],
+input[type="text"],
+input[type="username"],
+input[type="password"],
+input[type="search"],
+textarea {
+  height: 25px;
+  width: 200px;
+  margin: 10px 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input[type="username"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover {
+  border: 1px solid rgb(0, 110, 255);
+  transition: all 0.4s ease;
+}
+
+form {
+  margin: 10px 80px;
+}
+
+div {
+  margin: 20px 0px;
+  display: block;
+}
+
+/*
+*
+*  Анимация кнопки выкл-вкл.
+=======================================================================*/
+.on__off input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.on__off .off_on {
+  width: 100px;
+  height: 30px;
+  background: rgb(255, 0, 0);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.on__off input:checked + label {
+  transform: rotateX(180deg);
+  background: rgb(0, 255, 13);
+}
+
+/*=======================================================================*/
+
+/*
+*
+* Форматирование блоков
+*
+*/
+
+/**
+*
+* Блок регестрации
+*
+*/
+/*=======================================================================*/
+.form__register label {
+  display: block;
+  margin: 10px auto;
+  color: rgb(74, 163, 140);
+}
+.form__register input {
+  display: block;
+  padding: 0px 5px;
+  margin: 10px 0px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+/*=======================================================================*/
+
+/**
+*
+* Блок оценки сайта 
+*
+*/
+/*=======================================================================*/
+
+.site__rating .label1 {
+  color: rgb(74, 163, 140);
+}
+
+.site__rating div {
+  margin: 10px 8px;
+}
+.site__rating input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  outline: none;
+}
+
+.site__rating input:checked {
+  border: 6px solid black;
+}
+
+.site__rating input:hover {
+  border: 6px solid black;
+  transition: all 0.4s ease;
+}
+/*=======================================================================*/
+
+/**
+*
+* Блок хобби
+*
+*/
+/*=======================================================================*/
+
+.hobby__time .label2 {
+  color: rgb(74, 163, 140);
+}
+
+.hobby__time div {
+  margin: 10px 8px;
+}
+.hobby__time input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 25%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  outline: none;
+}
+
+.hobby__time input:checked {
+  border: 6px solid black;
+}
+
+.hobby__time input:hover {
+  border: 6px solid black;
+  transition: all 0.4s ease;
+}
+/*=======================================================================*/
+
+/**
+*
+* Блок выбора начинки для мороженного
+*
+*/
+/*=======================================================================*/
+.mice__cream__choice label {
+  display: block;
+  color: rgb(74, 163, 140);
+}
+.mice__cream__choice input {
+  margin: 10px 8px;
+  cursor: pointer;
+}
+/*=======================================================================*/
+
+/**
+*
+* Блок обычного счетчика
+*
+*/
+/*=======================================================================*/
+.test__counter label {
+  display: block;
+  color: rgb(74, 163, 140);
+}
+.test__counter input {
+  margin: 10px 8px;
+}
+.test__counter input[type="button"] {
+  height: 30px;
+  width: 30px;
+}
+.test__counter input[type="button"]:hover {
+  background: #999;
+  transition: all 0.4s ease;
+}
+/*=======================================================================*/
+
+/**
+*
+* Блок ползунка
+*
+*/
+/*=======================================================================*/
+.test__counter1 label {
+  display: block;
+  color: rgb(74, 163, 140);
+}
+.test__counter1 input {
+  color: green;
+  margin: 15px 8px;
+}
+/*=======================================================================*/
+
+/**
+*
+* Блок поиска
+*
+*/
+/*=======================================================================*/
+.text__search label {
+  display: block;
+  margin: 10px 8px;
+  color: rgb(74, 163, 140);
+}
+/*=======================================================================*/
+
+/**
+*
+* Блок включения выключения
+*
+*/
+/*=======================================================================*/
+.on__off label {
+  margin: 10px 8px;
+  color: rgb(74, 163, 140);
+}
+/*=======================================================================*/
+
+/**
+*
+* Блок клментария
+*
+*/
+/*=======================================================================*/
+.comment__user label {
+  margin: 10px 8px;
+  display: block;
+  color: rgb(74, 163, 140);
+}
+
+.comment__user textarea {
+  height: 150px;
+  width: 400px;
+  box-sizing: border-box;
+}
+/*=======================================================================*/
