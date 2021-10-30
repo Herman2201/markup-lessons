@@ -12,6 +12,7 @@ input[type="username"],
 input[type="password"],
 input[type="search"],
 textarea {
+  padding: 0px 10px;
   height: 25px;
   width: 200px;
   margin: 10px 8px;
@@ -80,7 +81,6 @@ div {
 }
 .form__register input {
   display: block;
-  padding: 0px 5px;
   margin: 10px 0px;
   border: 1px solid black;
   border-radius: 10px;
