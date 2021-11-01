@@ -8,7 +8,7 @@ body {
 
 input[type="button"],
 input[type="text"],
-input[type="username"],
+input[type="findOutTheName"],
 input[type="password"],
 input[type="search"],
 textarea {
@@ -20,7 +20,7 @@ textarea {
   border-radius: 5px;
 }
 
-input[type="username"]:hover,
+input[type="findOutTheName"]:hover,
 input[type="password"]:hover,
 input[type="search"]:hover {
   border: 1px solid rgb(0, 110, 255);
@@ -40,12 +40,17 @@ div {
 *
 *  Анимация кнопки выкл-вкл.
 =======================================================================*/
+.on__off label,
+.on__off input {
+  display: block;
+}
+
 .on__off input {
   position: absolute;
   visibility: hidden;
 }
 
-.on__off .off_on {
+.on__off .off__on {
   width: 100px;
   height: 30px;
   background: rgb(255, 0, 0);
@@ -55,7 +60,7 @@ div {
   transition: transform 1s ease-in-out;
 }
 
-.on__off input:checked + label {
+.on__off input:checked + .off__on {
   transform: rotateX(180deg);
   background: rgb(0, 255, 13);
 }

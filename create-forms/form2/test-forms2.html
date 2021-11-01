@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style-form2.css" />
     <link rel="stylesheet" href="../normalize.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <title>Test create form 2</title>
   </head>
   <body>
@@ -15,33 +19,38 @@
       <hr />
       <div class="form__register">
         <label for="user">Введите свое имя</label>
-        <input type="username" id="user" name="user" placeholder="Login" />
+        <input
+          type="findOutTheName"
+          id="user"
+          name="user"
+          placeholder="Login"
+        />
         <label for="pass">Придумайте пароль</label>
         <input type="password" id="pass" name="pass" placeholder="Password" />
       </div>
       <div class="site__rating">
-        <label for="otlichno" class="label1">Оцените наш сайт</label>
+        <label for="fine" class="label1">Оцените наш сайт</label>
         <div>
           <input
             type="radio"
             name="contact"
             checked="true"
-            id="otlichno"
-            value="otlichno"
+            id="fine"
+            value="fine"
           />
-          <label for="otlichno">Отлично</label>
+          <label for="fine">Отлично</label>
         </div>
         <div>
-          <input type="radio" name="contact" id="horosho" value="horosho" />
-          <label for="horosho">Хорошо</label>
+          <input type="radio" name="contact" id="good" value="good" />
+          <label for="good">Хорошо</label>
         </div>
         <div>
-          <input type="radio" name="contact" id="ne_ochen" value="ne_ochen" />
-          <label for="ne_ochen"> Не очень</label>
+          <input type="radio" name="contact" id="not_good" value="not_good" />
+          <label for="not_good"> Не очень</label>
         </div>
         <div>
-          <input type="radio" name="contact" id="ploho" value="ploho" />
-          <label for="ploho"> Плохо</label>
+          <input type="radio" name="contact" id="bad" value="bad" />
+          <label for="bad"> Плохо</label>
         </div>
       </div>
       <div class="hobby__time">
@@ -94,6 +103,7 @@
         <label for="search">Поиск</label>
         <input type="search" id="search" placeholder="Поиск" />
       </div>
+
       <div class="on__off">
         <label>Включить</label>
         <input id="off__on" name="off__on" type="checkbox" />
