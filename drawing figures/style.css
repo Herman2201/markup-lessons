@@ -1,28 +1,235 @@
-/* body {
-    height: 100%;
-    width: 100%;
-
-} */
-.figures {
-  height: 200px;
-  width: 200px;
-  margin: 100px;
+body {
+  font-family: Noto Sans, sans-serif;
 }
-.detail1 {
-  height: 0px;
-  width: 0px;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid #cd6d45;
+.container__coputer { 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.part__screen__datail {
+  z-index: 1;
+  height: 460px;
+  width: 800px;
+  margin: 100px 250px 0px;
+  border-radius: 7px;
+  background-color: rgb(177, 175, 175);
   position: relative;
 }
-.detail1::after {
-  content: "";
-  height: 0px;
-  width: 0px;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-top: 100px solid #cd6d45;
+.part__screen__datail::after {
+  content: '';
+  border: 20px solid rgb(0, 0, 0);
+  height: 360px;
+  background: white;
+  width: 760px;
+  border-radius: 7px 7px 0px 0px;
   position: absolute;
-  rotate: 180%;
+  animation-duration: 5s;
+  animation-name: starting;
 }
+.part__screen__datail::before {
+  height: 100px;
+  width: 100px;
+  top: 400px;
+  left: 345px;
+  content: '';
+  background: url(resurs/logo-apple.png) no-repeat;
+  background-size: auto 70%;
+  position: absolute;
+}
+.computer__leg {
+  margin: 0 600px;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(130, 130, 130);
+  position: relative;
+}
+.stand__computer__leg {
+  margin: 0 500px;
+  height: 10px;
+  width: 300px;
+  background-color: rgb(130, 130, 130);
+  border-radius: 5px;
+}
+
+.loading__progres {
+  z-index: 2;
+  width: 150px;
+  height: 4px;
+  display: flex;
+  top: 320px;
+  left: 325px;
+  border: 0.2px rgb(0, 0, 0) solid;
+  border-radius: 2px;
+  position: absolute;
+}
+.loading__apple--item {
+  z-index: 3;
+  height: 100px;
+  width: 100px;
+  top: 150px;
+  left: 345px;
+  background: url(resurs/logo-apple.png) no-repeat;
+  background-size: auto 70%;
+  opacity: 1;
+  position: absolute;
+  animation: apple--item 2s 6s infinite;
+}
+.loading__progres::after {
+  content: '';
+  width: 150px;
+  height: 4px;
+  animation: slidein 7s 6s forwards;
+}
+
+ .display__hello {
+  z-index: 4;
+  height: 400px;
+  width: 780px;
+  background: black;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 0;
+  position: absolute;
+  animation: cout__hello-admin 2s 14s forwards;
+}
+.animation__text {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  animation: view__animesion__hello 2s 20s forwards;
+}
+.animation__text div {
+  opacity: 0;
+  padding: 0 5px;
+}
+
+.item2  { animation: animation__big__leter 2.1s 23s infinite; }
+.item3  { animation: animation__big__leter 2.2s 23s infinite; }
+.item4  { animation: animation__big__leter 2.3s 23s infinite; }
+.item5  { animation: animation__big__leter 2.4s 23s infinite; }
+.item6  { animation: animation__big__leter 2.5s 23s infinite; }
+.item7  { animation: animation__big__leter 2.6s 23s infinite; }
+.item8  { animation: animation__big__leter 2.7s 23s infinite; }
+.item9  { animation: animation__big__leter 2.8s 23s infinite; }
+.item10 { animation: animation__big__leter 2.9s 23s infinite; }
+.item11 { animation: animation__big__leter 3s   23s infinite; }
+.item12 { animation: animation__big__leter 3.1s 23s infinite; }
+
+@keyframes animation__big__leter {
+  0% {
+    opacity: 1;
+    font-size: 40px;
+  }
+  50% {
+    opacity: 1;
+    font-size: 60px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 40px;
+  }
+} 
+@keyframes starting {
+  from {
+    background: rgb(0, 0, 0);
+  }
+
+  to {
+    background: rgb(255, 255, 255);
+  }
+}
+@keyframes slidein {
+  0% {
+    width: 0;
+    background: rgb(0, 0, 0);
+  }
+
+  100% {
+    width: 150px;
+    background: rgb(0, 0, 0);
+    border: none;
+  }
+} 
+@keyframes apple--item {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cout__hello-admin {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes view__animesion__hello {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
