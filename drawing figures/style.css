@@ -79,6 +79,7 @@ body {
   position: absolute;
 }
 .loading__apple__item {
+  z-index: 3;
   width: 50rem;
   height: 29rem;
   display: flex;
@@ -87,17 +88,16 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  animation: apple--item 2s 6s infinite;
 }
 
 .image--apple {
-  z-index: 3;
   height: 7em;
   width: 7em;
   margin-bottom: 8em;
   background: url(resurs/logo-apple.png) no-repeat;
   background-size: auto 70%;
   opacity: 1;
+  animation: apple--item 2s 6s infinite;
   position: absolute;
 }
 
@@ -160,7 +160,7 @@ body {
   animation: animation__big__leter 3.1s 20s infinite;
 }
 
-/* @keyframes animation__big__leter {
+@keyframes animation__big__leter {
   0% {
     opacity: 1;
     font-size: 40px;
@@ -173,7 +173,7 @@ body {
     opacity: 1;
     font-size: 40px;
   }
-} 
+}
 @keyframes starting {
   from {
     background: rgb(0, 0, 0);
@@ -182,7 +182,7 @@ body {
   to {
     background: rgb(255, 255, 255);
   }
-} 
+}
 @keyframes slidein {
   0% {
     width: 0;
@@ -193,8 +193,8 @@ body {
     width: 150px;
     background: rgb(0, 0, 0);
   }
-} 
- @keyframes apple--item {
+}
+@keyframes apple--item {
   0% {
     opacity: 1;
   }
@@ -272,4 +272,4 @@ body {
   100% {
     opacity: 1;
   }
-}   */
+}
