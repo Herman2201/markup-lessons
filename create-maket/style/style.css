@@ -178,117 +178,38 @@ a {
 }
 
 .row__category__item {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 118px;
 }
 
-.column__item1 {
-  position: relative;
-  display: inline-block;
+.column__item {
   height: 380px;
   width: 23%;
   background-color: #ffffff;
-  border: rgb(255, 192, 0) 1px solid;
-  transition: all 0.4s ease;
-}
-
-.column__item1__hover {
-  position: absolute;
-  height: 380px;
-  width: 100%;
   background-color: #2d3e50;
   transition: all 0.4s ease;
 }
 
-.column__item2 {
-  position: relative;
-  display: inline-block;
-  margin: 0 30px;
-  height: 380px;
-  width: 23%;
-  background-color: #2d3e50;
-  transition: all 0.4s ease;
-}
-
-.column__item3 {
-  position: relative;
-  display: inline-block;
-  height: 380px;
-  width: 23%;
-  background-color: #2d3e50;
-  transition: all 0.4s ease;
-}
-
-.column__item4 {
-  position: relative;
-  display: inline-block;
-  margin-left: 30px;
-  height: 380px;
-  width: 23%;
-  background-color: #2d3e50;
-  transition: all 0.4s ease;
-}
-
-.column__item1:before {
-  content: '';
-  width: 77px;
-  height: 77px;
-  margin: 51px 0 0 110px;
-  position: absolute;
-  background: white;
-  border-radius: 100%;
-}
-
-.column__item2:before {
-  content: '';
-  width: 77px;
-  height: 77px;
-  margin: 61px 0 0 110px;
-  position: absolute;
-  background: white;
-  border-radius: 100%;
-}
-
-.column__item3:before {
-  content: '';
-  width: 77px;
-  height: 77px;
-  margin: 61px 0 0 110px;
-  position: absolute;
-  background: white;
-  border-radius: 100%;
-}
-
-.column__item4:before {
-  content: '';
-  width: 77px;
-  height: 77px;
-  margin: 61px 0 0 110px;
-  position: absolute;
-  background: white;
-  border-radius: 100%;
-}
-
-.column__item1__hover:hover {
-  opacity: 1;
-  transition: all 0.4s ease;
-}
-
-.column__item2:hover {
+.column__item:hover {
   background: rgb(255, 255, 255);
   border: rgb(255, 192, 0) 1px solid;
+}
+
+.background__icon {
   transition: all 0.4s ease;
 }
 
-.column__item3:hover {
-  background: rgb(255, 255, 255);
-  border: rgb(255, 192, 0) 1px solid;
+.column__item:hover .background__icon {
+  fill: white;
+}
+
+.color__icon {
   transition: all 0.4s ease;
 }
 
-.column__item4:hover {
-  background: rgb(255, 255, 255);
-  border: rgb(255, 192, 0) 1px solid;
-  transition: all 0.4s ease;
+.column__item:hover .color__icon {
+  fill: rgb(255, 192, 0);
 }
 /* END MAIN OR SECTION */
 
