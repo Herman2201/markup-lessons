@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../backend-project-lvl1"
+		},
+		{
+			"path": "../../Pathfinder"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "markup-lessons",
+		"files.associations": {
+			"algorithm": "c",
+			"random": "c"
+		}
+	}
+}
