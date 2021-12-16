@@ -1,39 +1,49 @@
-let viewport = $('#viewport').width(); // Ширина видимой части
-let slider = $('div.slider'); // Весь слайдер
-let viewSliders = $('.viewSlide'); // Показатели какой сейчас слайд показывается
-let viewSlide = 0; // Номер слайда
+var slideIndex = 1;
+showSlides(slideIndex);
 
-viewSliders[viewSlide].style.backgroundColor = 'yellow';
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
 
-$('.next').click(function () {
-  // Делаем индикатор слайда который сейчас отображается красным
-  viewSliders[viewSlide].style.backgroundColor = 'red';
-  // Проверяем, если номер слайда который сейчас показывается меньше 4
-  if (viewSlide < 3) {
-    // То номер слайда увеличивается на 1
-    viewSlide++;
-  } else {
-    // Иначе он будет равен 0
-    viewSlide = 0;
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName('mySlides');
+  var dots = document.getElementsByClassName('dot');
+  if (n > slides.length) {
+    slideIndex = 1;
   }
-  // Делаем индикатор слайда зелёным
-  viewSliders[viewSlide].style.backgroundColor = 'yellow';
-  // Задаём слайду значение позиции left через анимацию
-  slider.animate({ left: -viewSlide * viewport + 'px' }, { duration: 500 });
-});
-
-// Обработка события клик
-$('.prev').click(function () {
-  viewSliders[viewSlide].style.backgroundColor = 'red';
-  // Проверяем что номер слада больше нуля
-  if (viewSlide > 0) {
-    viewSlide--;
-  } else {
-    // Иначе присваиваем четыре
-    viewSlide = 3;
+  if (n < 1) {
+    slideIndex = slides.length;
   }
-  // Делаем индикатор зелёным
-  viewSliders[viewSlide].style.backgroundColor = 'yellow';
-  // Меняем позицию left с анимацией
-  slider.animate({ left: -viewSlide * viewport + 'px' }, { duration: 500 });
-});
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' active', '');
+  }
+  slides[slideIndex - 1].style.display = 'block';
+  dots[slideIndex - 1].className += ' active';
+}
+
+// var slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//   var i;
+//   var slides = document.getElementsByClassName('mySlides');
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = 'none';
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
+//   slides[slideIndex - 1].style.display = 'block';
+//   setTimeout(showSlides, 8000); // Change image every 2 seconds
+// }
